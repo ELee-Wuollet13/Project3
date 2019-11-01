@@ -1,11 +1,6 @@
 // Business logic
-
 function glitch(array, num) {
   var result = [];
-  var array = [];
-  for (i = 0; i <= num; i++) {
-    array.push(i.toString());
-  }
   for (i = 1; i <= num; i++) {
     if (array[i].includes("3")) {
       result.push("I'm sorry dave, I'm affraid I can't do that");
@@ -21,18 +16,16 @@ function glitch(array, num) {
 }
 
 // User Interface logic
-
-
 $(document).ready(function() {
   $("#input form").submit(function(event) {
-    $(".results").show();
     event.preventDefault();
+    $(".results").show();
     var num = parseInt($('input#intake').val());
-    // var array = [];
-    // for (i = 0; i <= num; i++) {
-    //   array.push(i.toString());
-    // }
-    var results = glitch(num);
+    var array = [];
+    for (i = 0; i <= num; i++) {
+      array.push(i.toString());
+    }
+    var results = glitch(array, num);
     results.forEach(function(element) {
   $('#solution').append("<li>" + element + "</li>");
   })
