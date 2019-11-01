@@ -14,22 +14,26 @@ function glitch(array, num) {
   }
   return result;
 }
+
 function arrMkr(num) {
-  array = []
+  arraymk = []
   for (i = 0; i <= num; i++) {
-    array.push(i.toString());
+    arraymk.push(i.toString());
   };
+  return arraymk;
+  console.log(array);
 };
+
 // User Interface logic
 $(document).ready(function() {
   $("#input form").submit(function(event) {
     event.preventDefault();
     var num = $('input#intake').val();
-    consle.log(num)
+    console.log(num)
     var array = arrMkr(num);
     console.log(array);
     var results = glitch(array, num);
-    console.log(result);
+    console.log(results);
     results.forEach(function(element) {
   $('#solution').append("<li>" + element + "</li>");
   })
