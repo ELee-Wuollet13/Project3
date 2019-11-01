@@ -14,18 +14,22 @@ function glitch(array, num) {
   }
   return result;
 }
-
+function arrMkr(num) {
+  array = []
+  for (i = 0; i <= num; i++) {
+    array.push(i.toString());
+  };
+};
 // User Interface logic
 $(document).ready(function() {
   $("#input form").submit(function(event) {
     event.preventDefault();
-    $(".results").show();
-    var num = parseInt($('input#intake').val());
-    var array = [];
-    for (i = 0; i <= num; i++) {
-      array.push(i.toString());
-    }
+    var num = $('input#intake').val();
+    consle.log(num)
+    var array = arrMkr(num);
+    console.log(array);
     var results = glitch(array, num);
+    console.log(result);
     results.forEach(function(element) {
   $('#solution').append("<li>" + element + "</li>");
   })
