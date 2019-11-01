@@ -21,7 +21,6 @@ function arrMkr(num) {
     arraymk.push(i.toString());
   };
   return arraymk;
-  console.log(array);
 };
 
 // User Interface logic
@@ -29,11 +28,8 @@ $(document).ready(function() {
   $("#input form").submit(function(event) {
     event.preventDefault();
     var num = $('input#intake').val();
-    console.log(num)
     var array = arrMkr(num);
-    console.log(array);
     var results = glitch(array, num);
-    console.log(results);
     results.forEach(function(element) {
   $('#solution').append("<li>" + element + "</li>");
   })
