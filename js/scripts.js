@@ -23,23 +23,23 @@ function arrMkr(num) {
   return arraymk;
 };
 
-function split(results) {
-  arr1 =[]
-  arr2 = []
-  arr3 = []
-  for (var i = 0; i < array.length; i++) {
-    if (array[i] === array[30]) {
-      array.slice(0,i).push(arr1)
-    } else if (array[i] === array[60]) {
-      array.slice(31,i).push(arr2)
-    } else (array[i] === array[90])
-      array.slice(61,i]).push(arr3)
-
-    console.log(arr1);
-    console.log(arr2);
-    console.log(arr3);
-  )}
-}
+// function split(results) {
+//   arr1 =[]
+//   arr2 = []
+//   arr3 = []
+//   for (var i = 0; i < array.length; i++) {
+//     if (array[i] === array[30]) {
+//       array.slice(0,i).push(arr1)
+//     } else if (array[i] === array[60]) {
+//       array.slice(31,i).push(arr2)
+//     } else {
+//       array.slice(61,i]).push(arr3)
+//     console.log(arr1);
+//     console.log(arr2);
+//     console.log(arr3);
+//   })
+//   )}
+// }
 
 
 // User Interface logic
@@ -49,7 +49,7 @@ $(document).ready(function() {
     var num = $('input#intake').val();
     var array = arrMkr(num);
     var results = glitch(array, num);
-    var splitResult = split(results)
+    // var splitResult = split(results)
 
 
     results.forEach(function(element) {
