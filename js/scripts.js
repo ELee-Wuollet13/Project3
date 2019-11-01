@@ -31,6 +31,7 @@ $(document).ready(function() {
     var array = arrMkr(num);
     var results = glitch(array, num);
     results.forEach(function(element) {
+      
   $('#solution').append("<li>" + element + "</li>");
   })
 })
