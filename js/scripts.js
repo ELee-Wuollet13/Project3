@@ -14,7 +14,6 @@ function glitch(array, num) {
   }
   return result;
 }
-
 function arrMkr(num) {
   arraymk = []
   for (i = 0; i <= num; i++) {
@@ -23,37 +22,15 @@ function arrMkr(num) {
   return arraymk;
 };
 
-// function split(results) {
-//   arr1 =[]
-//   arr2 = []
-//   arr3 = []
-//   for (var i = 0; i < array.length; i++) {
-//     if (array[i] === array[30]) {
-//       array.slice(0,i).push(arr1)
-//     } else if (array[i] === array[60]) {
-//       array.slice(31,i).push(arr2)
-//     } else {
-//       array.slice(61,i]).push(arr3)
-//     console.log(arr1);
-//     console.log(arr2);
-//     console.log(arr3);
-//   })
-//   )}
-// }
-
-
 // User Interface logic
 $(document).ready(function() {
   $("#input form").submit(function(event) {
+    $('ul').empty()
     event.preventDefault();
     var num = $('input#intake').val();
     var array = arrMkr(num);
     var results = glitch(array, num);
-    // var splitResult = split(results)
-
-
     results.forEach(function(element) {
-
       $('#solution').append("<li>" + element + "</li>");
     })
   })
