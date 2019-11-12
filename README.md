@@ -2,9 +2,15 @@
 
 Made by: Everett Lee-Wuollet
 
+
 #### Description
 
->The user input is pilled from id intake and converted into the variable 'num'
+This program takes in a number and converts it into a list of numbers and a series of strings.
+
+
+#### Specs
+
+>The user input is pulled from id intake and converted into the variable 'num'
 >
 >An array is created called 'array'
 >
@@ -18,14 +24,17 @@ Made by: Everett Lee-Wuollet
 >
 >To reset that page the user may click 'reset' or their results will continue to append
 
+
 #### Setup Instructions
 
 Either follow this like:  https://elee-wuollet13.github.io/Project3/
 Or access the page through Github a link to my hithub repository and clone the program directly.
 
+
 #### Known Bugs
 
 There are no known bugs at this time.
+
 
 #### Support and contact details
 
