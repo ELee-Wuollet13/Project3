@@ -4,11 +4,6 @@ Made by: Everett Lee-Wuollet
 
 #### Description
 
-This program takes in use input and returns numbers them with those including three, two and one converted into strings.
-
-
-####This application will:
-
 The user input is pilled from id intake and converted into the variable 'num'
 
 An array is created called 'array'
