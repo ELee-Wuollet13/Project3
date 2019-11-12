@@ -5,11 +5,17 @@ Made by: Everett Lee-Wuollet
 #### Description
 
 >The user input is pilled from id intake and converted into the variable 'num'
+>
 >An array is created called 'array'
+>
 >Glitch runs a for loop from one to num, pushing either the number or the desired string into a result array
+>
 >The array is returned
+>
 >A forEach loop runs through the array committing each element to and HTML list item
+>
 >The list is displayed to the User
+>
 >To reset that page the user may click 'reset' or their results will continue to append
 
 #### Setup Instructions
