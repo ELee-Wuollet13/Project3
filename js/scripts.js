@@ -14,6 +14,7 @@ function glitch(array, num) {
   }
   return result;
 }
+
 function arrMkr(num) {
   arraymk = []
   for (i = 0; i <= num; i++) {
