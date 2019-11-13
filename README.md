@@ -28,7 +28,7 @@ This program takes in a number and converts it into a list of numbers and a seri
 | This will return a number line | a number | 5 |
 | This will return a 'beep' for every digit with a '1' | 11 | beep |
 | This will return a 'boop' for every digit with a '2' | 12 | boop |
-| This will return a string for every digit with a '3' | 13 | "I'm sorry dave, I'm afraid I can't do that" |
+| This will return 'I'm sorry dave, I'm afraid I can't do that' for every digit with a '3' | 13 | "I'm sorry dave, I'm afraid I can't do that" |
 | This will return an array of all numbers between '1' and user input | '5' | 'beep' 'beep' "I'm sorry dave, I'm afraid I can't do that" '4' '5' |
 
 #### Setup Instructions
